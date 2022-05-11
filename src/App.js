@@ -12,7 +12,7 @@ import Projects from  "./pages/Projects";
 
 
 function App() {
-  const URL = "http://localhost:4000/";
+  const URL = "https://portfolio-austin-lu.herokuapp.com/";
 
   return (
     <div className="App">
