@@ -6,10 +6,11 @@ function About(props) {
     const getAbout = async () => {
         const response = await fetch(props.URL + "about");
         const data = await response.json();
+        console.log(data)
         setAbout(data)
     };
 
-    useEffect(()=> getAbout(), []);
+    useEffect(()=> getAbout());
 
     const loaded = () => (
         <div>

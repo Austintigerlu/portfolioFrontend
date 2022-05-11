@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/">
-          <Home/>
+          <Home />
         </Route>
         <Route path="/projects">
           <Projects URL={URL}/>
