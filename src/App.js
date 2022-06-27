@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from  "./pages/Projects";
 
+import "./App.scss"
 
 function App() {
   const URL = "https://portfolio-austin-lu.herokuapp.com/";
