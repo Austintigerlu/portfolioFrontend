@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import {FaBars, FaTimes} from "react-icons/fa"
-
+import {Link} from "react-scroll"
 
 function NavBar(){
     const [nav, setNav] = useState(false)
-    console.log(nav)
+
     const links = [
         {
             id: 1,
@@ -16,7 +16,7 @@ function NavBar(){
         },
         {
             id: 3,
-            link: 'portfolio'
+            link: 'projects'
         },
         {
             id: 4,
@@ -28,9 +28,9 @@ function NavBar(){
         },
     ]
     return(
-        <div className="flex justify-between items-center w-full h-20 text-white bg-black px-4 fixed">
+        <div className="flex justify-between items-center w-full h-20 text-[#FBEEC1] bg-gradient-to-b from-[#8D8741] to-inherit px-4 fixed">
             <div>
-                <h1 className="text-5xl font-name ml-2">Austin Lu</h1>
+                <h1 className="text-4xl font-name ml-2">Austin Lu</h1>
             </div>
 
             <ul className="hidden md:flex">
@@ -38,9 +38,9 @@ function NavBar(){
                     return(
                     <li 
                         key={id} 
-                        className="px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200"
+                        className="px-4 cursor-pointer capitalize font-medium hover:scale-105 duration-200"
                     >
-                        {link}
+                        <Link to={link} smooth duration={500}>{link}</Link>
                     </li>
                     )
                 })}
@@ -58,7 +58,7 @@ function NavBar(){
                             key={id} 
                             className="px-4 cursor-pointer capitalize py-6 text-4xl"
                         >
-                            {link}
+                            <Link to={link} onClick={()=> setNav(!nav)} smooth duration={500}>{link}</Link>
                         </li>
                         )
                     })}

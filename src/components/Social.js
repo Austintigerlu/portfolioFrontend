@@ -54,7 +54,7 @@ function Social(){
                     return(
                         <li 
                             key={id} 
-                            className={"flex justify-between items-center w-40 h-14 px-4 bg-gray-400 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 "+ style}
+                            className={"flex justify-between items-center w-40 h-14 px-4 bg-gradient-to-b from-current to-inherit ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 "+ style}
                         >
                             <a href={href} download={download} className="flex justify-between items-center w-full">
                                 {child}
