@@ -12,6 +12,7 @@ import react from "../assets/react.png"
 import tailwind from "../assets/tailwind-css.png"
 import express from "../assets/express.png"
 import sass from "../assets/sass.png"
+import heroku from "../assets/heroku.png"
 
 function Experience(){
     
@@ -94,6 +95,12 @@ function Experience(){
             name: "Sass",
             style: 'shadow-[#cd6799]'
         },
+        {
+            id: 12,
+            src: heroku,
+            name: "Heroku",
+            style: 'shadow-[#C9C3E6]'
+        },
     ]
 
     return(
@@ -104,7 +111,7 @@ function Experience(){
                     <p className="py-6">Here are some of the technologies I've worked with</p>
                 </div>
 
-                <div className="w-full grid grid-cols-2 sm:grid-cols-7 gap-8 text-center py-8 px-12 sm:px-0">
+                <div className="w-full grid grid-cols-3 sm:grid-cols-7 gap-8 text-center py-8 px-12 sm:px-0">
                     {technologies.map(({id, src, name, style}) => {
                         return(
                             <div key={id} className={"shadow-md hover:scale-105 duration-500 py-2 rounded-lg " + style}>

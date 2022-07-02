@@ -37,15 +37,12 @@ function Projects(){
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">Projects</p>
                 </div>
 
-                <div className="grid sm:grid-cols-3 md:grid-cols-4 gap-8 px-12 sm:px-0">
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 px-12 sm:px-0">
                     {projects.map(({id, src, name})=> {
                         return(
-                            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                                <h2 className="flex items-center justify-center">{name}</h2>
-                                <img src={src} alt={name} className=" rounded-md duration-200 hover:scale-105"/>
-                                <div className="flex items-center justify-center">
-                                    <button className="bg-gray-300 w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Live</button>
-                                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                            <div key={id} className="shadow-md">
+                                <div className="">
+                                    <img src={src} alt={name} className="rounded-md"/>
                                 </div>
                             </div>
                         )
