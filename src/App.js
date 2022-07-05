@@ -1,6 +1,5 @@
 // Components
 import NavBar from "./components/NavBar";
-import Social from "./components/Social"
 
 // Pages
 import Home from "./pages/Home";
@@ -17,10 +16,9 @@ function App() {
       <NavBar/>
       <Home/>
       <About/>
-      <Projects/>
       <Experience/>
+      <Projects/>
       <Contact/>
-      <Social/>
     </div>
   );
 }

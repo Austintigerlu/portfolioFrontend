@@ -84,19 +84,19 @@ function Experience(){
             style: 'shadow-sky-400'
         },
         {
-            id: 11,
+            id: 12,
             src: express,
             name: "Express",
             style: 'shadow-gray-500'
         },
         {
-            id: 11,
+            id: 13,
             src: sass,
             name: "Sass",
             style: 'shadow-[#cd6799]'
         },
         {
-            id: 12,
+            id: 14,
             src: heroku,
             name: "Heroku",
             style: 'shadow-[#C9C3E6]'
@@ -104,11 +104,11 @@ function Experience(){
     ]
 
     return(
-        <div name="experience" className="w-full h-screen md:h-screen bg-gradient-to-b from-[#8D8741] to-[#659DBD]">
+        <div name="experience" className="w-full md:h-screen bg-[#282C2F] text-[#f1f0ec]">
             <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
                     <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Experience</p>
-                    <p className="py-6">Here are some of the technologies I've worked with</p>
+                    <p className="py-6">// Here are some of the technologies I've worked with</p>
                 </div>
 
                 <div className="w-full grid grid-cols-3 sm:grid-cols-7 gap-8 text-center py-8 px-12 sm:px-0">
