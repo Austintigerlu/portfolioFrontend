@@ -56,10 +56,10 @@ function Projects(){
                                     </span>
                                     <div className="pt-8 text-center">
                                         <a href={demo} target="_blank" rel="noopener noreferrer">
-                                            <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-300 font-bold text-lg">Demo</button>
+                                            <button className="text-center rounded-lg px-4 py-3 m-2 bg-[#323639] text-[#f1f0ec] font-bold text-lg">Demo</button>
                                         </a>
                                         <a href={code} target="_blank" rel="noopener noreferrer">
-                                            <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-300 font-bold text-lg">Code</button>
+                                            <button className="text-center rounded-lg px-4 py-3 m-2 bg-[#323639] text-[#f1f0ec] font-bold text-lg">Code</button>
                                         </a>
                                     </div>
                                 </div>
