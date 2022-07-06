@@ -65,10 +65,10 @@ function NavBar(){
     return(
         <div className="flex justify-between items-center w-full h-20 text-[#f1f0ec] bg-inherit px-4 fixed">
             <div>
-                <h1 className="text-4xl font-name ml-2 hidden md:flex">Austin Lu</h1>
+                <h1 className="text-[#00FFFF] text-4xl font-name ml-2 hidden md:flex">Austin Lu</h1>
             </div>
             <div className="md:hidden mr-10">
-                <h1 className="text-4xl font-name flex md:hidden">Austin</h1>
+                <h1 className="text-[#00FFFF] text-4xl font-name flex md:hidden">Austin</h1>
             </div>
 
             <ul className="hidden lg:flex">
@@ -127,7 +127,7 @@ function NavBar(){
                         return(
                             <li 
                                 key={id} 
-                                className={"flex justify-between items-center w-40 h-14 pl-10 pr-3 text-[#282C2F] bg-[#f1f0ec] ml-[-110px] hover:ml-[-32px] hover:rounded-md duration-300 "+ style}
+                                className={"flex justify-between items-center w-40 h-14 pl-10 pr-3 text-[#f1f0ec] bg-inherit ml-[-110px] hover:ml-[-32px] hover:rounded-md duration-300 "+ style}
                             >
                                 <a href={href} download={download} className="flex justify-between items-center w-full">
                                     {child}{logo}
