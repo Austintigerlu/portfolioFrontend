@@ -56,7 +56,7 @@ function NavBar(){
             id: 4,
             child: 'Resume',
             logo: <BsFillPersonLinesFill size={30}/>,
-            href: '/Austin Lu Resume.pdf',
+            href: '/Austin - Lu - Resume.pdf',
             style: 'rounded-br-md',
             download: true,
         }
