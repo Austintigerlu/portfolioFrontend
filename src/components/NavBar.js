@@ -4,6 +4,7 @@ import {Link} from "react-scroll"
 import {FaGithub, FaLinkedin} from "react-icons/fa"
 import {HiOutlineMail} from "react-icons/hi"
 import {BsFillPersonLinesFill} from "react-icons/bs"
+import logo from "../assets/logo_transparent.png"
 
 function NavBar(){
     const [nav, setNav] = useState(false)
@@ -64,11 +65,12 @@ function NavBar(){
     
     return(
         <div className="flex justify-between items-center w-full h-20 text-[#f1f0ec] bg-inherit px-4 fixed">
-            <div>
-                <h1 className="text-[#00FFFF] text-4xl font-name ml-2 hidden md:flex">Austin Lu</h1>
+            <div className="flex">
+                <img className="pt-3 w-24 items-center" src={logo}/>
+                <h1 className="text-[#00FFFF] items-center text-4xl font-bold ml-2 hidden md:flex">Austin Lu</h1>
             </div>
             <div className="md:hidden mr-10">
-                <h1 className="text-[#00FFFF] text-4xl font-name flex md:hidden">Austin</h1>
+                <h1 className="text-[#00FFFF] text-4xl font-bold flex md:hidden">Austin</h1>
             </div>
 
             <ul className="hidden lg:flex">
@@ -107,7 +109,7 @@ function NavBar(){
 
             {nav && (
 
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#09203F] to-[#3c627e] text-[#f1f0ec]">
+                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-[#202124] to-[#323639] text-[#f1f0ec]">
                     {links.map(({link, id}) => {
                         return(
                         <li 

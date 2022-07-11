@@ -1,6 +1,8 @@
 import React from "react";
 import {MdOutlineKeyboardArrowRight} from "react-icons/md"
 import {Link} from "react-scroll"
+import logo from "../assets/logo_transparent.png"
+
 
 function Home(){
     return(
@@ -10,11 +12,11 @@ function Home(){
                     <p className="text-xl">
                         Hi, my name is
                     </p>
-                    <h2 className="text-[#00FFFF] text-4xl sm:text-7xl font-bold py-2">
+                    <h2 className="text-[#00FFFF] text-4xl sm:text-6xl font-bold py-2">
                         Austin Lu
                     </h2>
-                    <h2 className="text-4xl sm:text-7xl font-bold pb-4">
-                    I create things for the <span className="text-[#00FFFF]">web</span>
+                    <h2 className="text-4xl sm:text-6xl pb-4">
+                    I create things for the <span className="text-[#00FFFF] font-bold">web</span>
                     </h2>
                     <p className="text-xl pb-10">
                     I'm a <span className="text-[#00FFFF]">full-stack developer</span> with a background in research and healthcare
@@ -34,6 +36,9 @@ function Home(){
                             </span>
                         </Link>
                     </div>
+                </div>
+                <div className="w-72 hidden lg:flex">
+                    <img className="h-100" src={logo} alt="logo"/>
                 </div>
             </div>
         </div>
